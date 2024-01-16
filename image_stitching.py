@@ -9,10 +9,11 @@ import imutils
 import cv2
 
 # construct the argument parser and parse the arguments
+# python image_stitching.py --images/new --output 3.jpg
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--images", type=str, required=True,
+ap.add_argument("-i", "--images",type=str, required=True,
                 help="path to input directory of images to stitch")
-ap.add_argument("-o", "--output", type=str, required=True,
+ap.add_argument("-o", "--output",type=str, required=True,
                 help="path to the output image")
 ap.add_argument("-c", "--crop", type=int, default=0,
                 help="whether to crop out largest rectangular region")
